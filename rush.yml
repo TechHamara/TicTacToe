@@ -1,0 +1,34 @@
+# For a detailed info on this file and supported fields, check out the below link:
+# https://github.com/ShreyashSaitwal/rush-cli/wiki/Metadata-File
+
+---
+name: TicTacToe
+description: You can use this extension for creating TicTacToe game. This extension has all the features that are needed for creating TicTacToe.<br> This extension was created by Horizon.<br><b>Thank You</b>
+
+version:
+  number: auto
+  name: '1.0'
+
+authors:
+  - Manan Sharma
+
+build:
+  release:
+    # Optimizes the extension on every release build.
+    optimize: true
+
+  # If enabled, you will be able to use Java 8 language features in your extension.
+  desugar:
+    enable: false
+    desugar_deps: false
+
+assets:
+  # Extension icon. This can be a URL or a local image in 'assets' folder.
+  icon: icon.png
+  # Extension assets.
+  # other:
+  #   - my_awesome_asset.anything
+
+# Extension dependencies (JAR).
+# deps:
+#   - my_awesome_library.jar
