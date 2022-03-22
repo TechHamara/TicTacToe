@@ -56,6 +56,16 @@ public class TicTacToe extends AndroidNonvisibleComponent {
             public void gameWinner(int winner) {
                 OnWinnerFound(winner);
             }
+
+            @Override
+            public void onOPlaced(int row, int col) {
+                OnOPlaced(row, col);
+            }
+
+            @Override
+            public void onXPlaced(int row, int col) {
+                OnXPlaced(row, col);
+            }
         });
         View v = component.getView();
         ViewGroup vg = (ViewGroup) v;
@@ -152,4 +162,17 @@ public class TicTacToe extends AndroidNonvisibleComponent {
         return this.winningLineColor;
     }
 
+    //Adding Index Features
+
+    @SimpleEvent
+    public void OnXPlaced(int row, int col) {
+        EventDispatcher.dispatchEvent(this, "OnXPlaced", row, col);
+    }
+
+    @SimpleEvent
+    public void OnOPlaced(int row, int col) {
+        EventDispatcher.dispatchEvent(this, "OnOPlaced", row, col);
+    }
+
 }
+ 

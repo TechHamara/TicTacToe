@@ -8,4 +8,8 @@ public interface TicTacToeListener {
     void onXPlayerTurn();
 
     void gameWinner(int winner);
+
+    void onOPlaced(int row, int col);
+
+    void onXPlaced(int row, int col);
 }

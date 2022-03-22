@@ -98,7 +98,7 @@ public class GameLogic {
 
     public boolean gameDraw() {
         return checkDraw;
-            
+
     }
 
     public int[] getWinType() {
